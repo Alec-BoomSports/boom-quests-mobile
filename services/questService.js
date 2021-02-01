@@ -1,5 +1,6 @@
 
-const baseURL = 'http://localhost:8080/quests'
+const isLocal = false
+const baseURL = isLocal ? 'http://localhost:8080/quests' : 'https://boom-quests-api-tyejyrnl5a-uc.a.run.app/quests'
 
 class QuestService {
   constructor (authorization) {
