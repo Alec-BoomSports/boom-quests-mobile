@@ -50,10 +50,10 @@ export const ActiveQuests = props => {
 
   useEffect(() => {
     if (isRefreshing) {
-      this.fetchQuests()
+      fetchQuests()
         .finally(() => setIsRefreshing(false))
     }
-  }, [isRefreshing])
+  }, [fetchQuests, isRefreshing])
 
   useEffect(() => {
     fetchQuests()
